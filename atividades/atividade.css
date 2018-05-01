@@ -1,0 +1,25 @@
+h1 {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 38px;
+}
+body {
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+caption {
+    margin-bottom: 20px;
+}
+#Patividade {
+    padding-right: 50px;
+}
+#atividade1 {
+    padding-right: 50px;
+}

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255)
+}
+button#reproduzir {
+    background-color: aqua;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 55px;
+    left: 40%;
+}
+button#pause {
+    background-color: aqua;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 55px;
+    right: 40%;
+}
+
+input#audio {
+    background-color: aqua;
+    border-radius: 10px;
+    border: 2px aqua solid;
+    border-color: black;
+    margin-top: 30px;
+}
+input#video {
+    background-color: aqua;
+    border-radius: 10px;
+    border: 2px aqua solid;
+    border-color: black;
+    margin-top: 10px;
+}
+video {
+    background: black;
+    border: 7px black solid;
+    max-width: 800px;
+    max-height: 1000px;
+    margin-top: 20px;
+    min-width: 300px;
+    min-height: 400px;
+}
+audio {
+    margin-top: 10px;
+}

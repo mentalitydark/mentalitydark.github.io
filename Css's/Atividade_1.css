@@ -1,0 +1,52 @@
+div {
+    border: 2px solid;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+div#Hipotenusa{
+    border: 4px solid #311557;
+    border-radius: 5px;
+    padding: 11px;
+    background-color: #8F78AD;
+    width: 23.42606149341142%;
+    float: left;
+}
+div#Morse{
+    border: 4px solid #116611;
+    border-radius: 5px;
+    padding: 11px;
+    width: 32.50834553440707%;
+    float: left;
+    background-color: #88CC88;
+}
+textarea{
+    resize: none;
+    height: 150px;
+}
+div#Texto{
+    border: 2px solid;
+    width: 21.96193265007321%;
+    position: relative;
+    top: 16px;
+    float: left;
+    padding: 15px
+}
+div#MDC{
+    border: 2px solid;
+    position: relative;
+    bottom: 276px;
+    padding: 14px;
+    float: left;
+    width: auto;
+}
+a#voltar{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+button#subir{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

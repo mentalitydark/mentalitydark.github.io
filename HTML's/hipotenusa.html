@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Hipotenusa</title>
+</head>
+<body>
+<script>
+    function hipotenusa(catetoA, catetoB) {
+            let hipotenusa = (((catetoA ** 2) + (catetoB ** 2)) ** (1 / 2));
+            return hipotenusa;
+        }
+        // Casos de Teste:
+        console.log(hipotenusa(4, 3) === 5, 'hipotenusa(4, 3) === 5');
+        console.log(hipotenusa(7, 24) === 25, 'hipotenusa(7, 24) === 25');
+        // ajuste as casas decimais a vontade para se adequar na precisão da sua raiz,
+        // mas É EXIGIDA a precisão de pelo menos 4 casas
+        console.log(hipotenusa(12, 19) === 22.47220505424423, 'hipotenusa(12, 19) === 22.47220505424423');
+        console.log(hipotenusa(1366, 768) === 1567.0928498337296, 'hipotenusa(1366, 768) === 1567.0928498337296');
+        //Adicionado
+        console.log(hipotenusa(1, 2) === 2.23606797749979, 'hipotenusa(1, 2) === 2.23606797749979');
+        console.log(hipotenusa(109, 23) === 111.40017953306898, 'hipotenusa(109, 23) === 111.40017953306898');
+
+</script>   
+</body>
+</html>

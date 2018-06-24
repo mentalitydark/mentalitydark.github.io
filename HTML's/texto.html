@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Texto</title>
+</head>
+<body>
+    <script>
+        // reverse
+            function reverse(palavra) {
+                let revertida = "";
+                let tamanho = palavra.length;
+                for (let i = (tamanho - 1); i >= 0; i--) {
+                    revertida += palavra[i];
+                }
+                return revertida
+            }
+            // strip
+            function strip(frase, tira) {
+                let saida = "";
+                let tamanho = frase.length;
+                for (let i = 0; i < tamanho; i++) {
+                    if (frase[i] !== tira) {
+                        saida += frase[i];
+                    }
+                }
+                return saida
+            }
+            // palindrome
+            function palindrome(frase) {
+                const mudanca = [",", "-", "!", " ", ".", "?", 'á', 'à', 'â', 'ã', 'ó', 'ò', 'ô', 'ô', 'é', 'è', 'ê', 'í', 'ì', 'î', 'ú', 'ù', 'û'];
+                for (let i = 0; i < 6; i++) {
+                    frase = strip(frase, mudanca[i]);
+                }
+                let c = 6
+                let tamanho = frase.length;
+                let saida = "";
+                for (let i = 0; i < tamanho; i++ , c++) {
+                    /* if (frase[i] !== mudanca[c]) {
+                         saida += frase[i];
+                     }*/
+                    if ((frase[i] === 'á') || (frase[i] === 'à') || (frase[i] === 'â') || (frase[i] === "ã")) {
+                        saida += "a";
+                    }
+                    else if ((frase[i] === 'ó') || (frase[i] === 'ò') || (frase[i] === 'ô') || (frase[i] === "õ")) {
+                        saida += "o";
+                    }
+                    else if ((frase[i] === 'é') || (frase[i] === 'è') || (frase[i] === 'ê')) {
+                        saida += "e";
+                    }
+                    else if ((frase[i] === 'í') || (frase[i] === 'ì') || (frase[i] === 'î')) {
+                        saida += "i";
+                    }
+                    else if ((frase[i] === 'ú') || (frase[i] === 'ù') || (frase[i] === 'û')) {
+                        saida += "u";
+                    }
+                    else {
+                        saida += frase[i]
+                    }
+                }
+                if (saida === frase) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+            // REVERSE
+            console.log("reverse");
+            let t1 = 'teste';
+            let r1 = reverse(t1);
+            console.log(r1); // etset
+            // Casos de Teste:
+            console.log(r1 === 'etset');
+            console.log(reverse('internet das coisas') === 'sasioc sad tenretni', "reverse('internet das coisas') === 'sasioc sad tenretni'");
+            console.log(reverse('objeto') === 'otejbo', "reverse('objeto') === 'otejbo'");
+            // Adicione mais 2 Casos de Teste para reverse
+            console.log(reverse('mulua') === 'aulum', "reverse('muluan') === 'aulum'");
+            console.log(reverse('disney') === 'yensid', reverse('disney') === 'yensid');
+
+            // PALINDROME
+            console.log("palindrome");
+            let t2 = 'pato';
+            let r2 = palindrome(t2);
+            console.log(r2); // false
+            // Casos de Teste:
+            console.log(r2 === false);
+            console.log(palindrome('arara') === true, "palindrome('arara') === true");
+            console.log(palindrome('a cara rajada da jararaca') === true, "palindrome('a cara rajada da jararaca') === true");
+            // Adicione mais 2 Casos de Teste para palindrome
+            console.log(palindrome('teste') === true, 'palindrome("teste") === true');
+            console.log(palindrome('lol') === true, 'palindrome("lol") === true');
+
+            // STRIP
+            console.log("strip");
+            let t3 = 'info: poo';
+            let r3 = strip(t3, ':');
+            console.log(r3); // info poo
+            // Casos de Teste:
+            console.log(r3 === 'info poo', "r3 === 'info poo'");
+            console.log(strip('.teste....de.strip..', '.') === 'testedestrip', "strip('.teste....de.strip..', '.') === 'testedestrip'");
+            console.log(strip('arara', 'a') === 'rr', "strip('arara', 'a') === 'rr'");
+            console.log(strip('analise e desenvolvimento de sistemas', 'e') === 'analis  dsnvolvimnto d sistmas', "strip('analise e desenvolvimento de sistemas', 'e') === 'analis  dsnvolvimnto d sistmas'");
+            // Adicione mais 2 Casos de Teste para strip
+            console.log(strip('muluan', 'a') === 'mulun', "strip('mulua', 'a') === 'mulun'");
+            console.log(strip('strip', 'i') === 'strp', "strip('strip', 'i') === 'strp'");
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeira Atividade</title>
+    <link rel="stylesheet" href="../Css's/Atividade_1.css">
+</head>
+<body id="topo">
+    <button id="subir"><a href="#topo">&#8657</a></button>
+    <h1 align="center">Primeira Atividade</h1>
+    <div id="Hipotenusa">
+        <h3 align="center">Hipotenusa</h3>
+        <label for="PrimeiroVallor">Primeiro Valor:</label>
+        <input id="PrimeiroValor" type="number" placeholder="Digite o valor">
+        <br>
+        <label for="SegundoValor">Segundo Valor:</label>
+        <input id="SegundoValor" type="number" placeholder="Digite o valor">
+        <br>
+        <span>Resultado: </span>
+        <output id="Resultado"></output>
+        <br>
+        <button id="CalcularHipotenusa">Calcular</button>
+    </div>
+    <div id="Morse">
+        <h3 id="morse">Código Morse</h3>
+        <textarea id="codificar" placeholder="Digite o texto"></textarea>
+        <button id="CodigoMorse">Codificar</button>
+        <textarea id="codificado" readonly placeholder="Texto codificado"></textarea>
+    </div>
+    <div id="Texto">
+        <div id="reverse">
+            <h3 align="center">Reverse</h3>
+            <label for="reverter">Texto para ser Revertido:</label>
+            <input id="reverter" type="text" placeholder="Digite o texto">
+            <br>
+            <span>Texto Revertido:</span>
+            <output id="revertido"></output>
+            <br>
+            <button id="revert">Reverter</button>
+        </div>
+        <div id="strip">
+            <h3 align="center">Strip</h3>
+            <label for="FraseTira">Frase:</label>
+            <input id="FraseTira" type="text" placeholder="Digite a frase">
+            <br>
+            <label for="Tirar" style="margin-right: 3px">Tirar:</label>
+            <input type="text" id="tirar" placeholder="Caracter para tirar">
+            <br>
+            <span>Frase sem caracter:</span>
+            <output id="tirado"></output>
+            <br>
+            <button id="TirarCaracter">Tirar</button>
+        </div>
+        <div id="palindrome">
+            <h3 align="center">Palindrome</h3>
+            <label for="palindromo">Verificador de palindrome</label>
+            <input id="palindromo" type="text" placeholder="Digite a frase">
+            <br>
+            <output id="verificado"></output>
+            <br>
+            <button id="verificador">Verificar</button>
+        </div>
+    </div>
+    <div id="MDC">
+        <h3 id="mdc">Calcular MDC</h3>
+        <label for="PValor">Primeiro Valor:</label>
+        <input type="number" id="PValor" placeholder="Digite um valor">
+        <br>
+        <label for="SValor">Segundo Valor:</label>
+        <input type="number" id="SValor" placeholder="Digite um valor">
+        <br>
+        <span>Resultado:</span>
+        <output id="ResultadoMDC"></output>
+        <br>
+        <button id="CalcularMDC">Calcular</button>
+    </div>
+    <a href="atividades.html" id="voltar">Voltar</a>
+    <script src="../Hipotenusa/hipotenusa.js"></script>
+    <script src="../Morse/morse.js"></script>
+    <script src="../Texto/texto.js"></script>
+    <script src="../MDC/mdc.js"></script>
+</body>
+</html>

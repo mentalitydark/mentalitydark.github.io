@@ -41,9 +41,9 @@ pv.addEventListener('ended', function() {
 pv.addEventListener('timeupdate', function() {
     body.style.backgroundColor = `rgb(${red},${green},${blue})`;
     //console.log(red);
-    if (red >= 20) {
+    if (red > 20) {
         red--;
-    } else if (green >= 20) {
+    } else if (green > 20) {
         green--;
     } else {
         blue--;
